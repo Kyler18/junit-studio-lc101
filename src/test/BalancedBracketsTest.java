@@ -53,7 +53,7 @@ public class BalancedBracketsTest {
         assertTrue(BalancedBrackets.hasBalancedBrackets("[[][]]"));
     }
     @Test
-    public void wronglyNestedBracketsReturnsTrue() {
-        assertTrue(BalancedBrackets.hasBalancedBrackets("][]["));
+    public void wronglyNestedBracketsReturnsFalse() {
+        assertFalse(BalancedBrackets.hasBalancedBrackets("][]["));
     }
 }
